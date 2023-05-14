@@ -251,39 +251,13 @@ body, html {
 	</style>
 </head>
 <body>
-  
+ 
   <div class= "container">
 
-    <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="logo.png" alt="Elf Express Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-            <a href="#" class="btn btn-primary">Sign In</a>
-        </div>
-    </div>
-</nav>
-
+     <!-- Navigation -->
     
+  {% include 'nav.html' %}
+  
 <!-- Hero Section -->
 <section id="hero">
     <div class="container">
@@ -375,25 +349,9 @@ body, html {
         </div>
     </div>
 </section>
-
-    <!-- Footer Section -->
-<section id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <p>&copy; 2023 Elf Express. All rights reserved.</p>
-            </div>
-            <div class="col-lg-6">
-                <div class="social-media">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+      <!-- Footer Section -->
+ {% include 'footer.html' %}
+  
   <!-- Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
 </div>
